@@ -1,0 +1,19 @@
+<html>
+
+<body>
+
+<h2>Locate HTML Elements</h2>
+
+<p>Point Park University</p>
+<p>My Students are the <b>brightest</b> at the University.</p>
+
+<p id="ppu"></p>
+
+<script>
+var x = document.getElementsByTagName("p");
+document.getElementById("ppu").innerHTML =
+'The text in first paragraph (index 1) is: ' + x[1].innerHTML;
+</script>
+
+</body>
+</html>
