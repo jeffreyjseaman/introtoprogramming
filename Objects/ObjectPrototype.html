@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Prototype Constructors</h2>
+
+<p id="prototype"></p>
+
+<script>
+function Person(first, last, age, height) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.height = height;
+}
+
+Person.prototype.nationality = "Irish";
+
+var tvHost = new Person("Conan", "OBrien", 55, 76);
+document.getElementById("prototype").innerHTML =
+"The nationality of a tvHost " + tvHost.firstName + " " + tvHost.lastName + " is " + tvHost.nationality + " and his height is " + tvHost.height;
+"The height is " + tvHost.height;
+</script>
+
+</body>
+</html>

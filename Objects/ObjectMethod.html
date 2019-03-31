@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Methods</h2>
+
+<p id="persons"></p>
+
+<script>
+// Create an object:
+//After write this, challenge the students to return the id as well
+//For assignment have them figure out how to add an argument in the request
+var person = {
+  firstName: "Clint",
+  lastName : "Hurdle",
+  id     : 2424,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// Display data from the object:
+document.getElementById("persons").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>

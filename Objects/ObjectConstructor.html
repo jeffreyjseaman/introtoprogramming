@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Constructors</h2>
+
+<p id="constructor"></p>
+
+<script>
+
+// Constructor function for Person objects
+//Explain how the class initializes the constructor
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create two Person objects
+// Explain that new means to
+var myFavoriteAthlete = new Person("Lebron", "James", 34, "Dark brown");
+var myFavoriteActor = new Person("Dwayne", "Johnson", 48, "Dark Brown");
+
+// Display age
+document.getElementById("constructor").innerHTML =
+"My favorite Athelete is " + myFavoriteAthlete.age + ". My Favorite Actor is " + myFavoriteActor.age + ".";
+
+</script>
+
+</body>
+</html>
